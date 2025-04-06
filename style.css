@@ -1,0 +1,218 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  background:white;
+}
+.main{
+ padding:10px 20px;
+}
+.main img{
+         width:50px;
+         height:50px;
+         border-radius:8px;
+         position:relative;
+         top:0px;
+         left:40px;
+}
+
+.navbar{
+ position: relative; 
+ float:right;
+ right:100px;
+ top:30px;
+}
+.navbar ul li  {
+      display:inline-block;
+      list-style: none;
+      margin:10px 20px 30px;
+      font-size:18px;
+  }
+.navbar ul li a{
+  color:black;
+  text-decoration: none;
+  font-size:18px;
+  position: relative;
+}
+.navbar ul li a::after{
+   content:"";
+   width:0;
+   height:3px;
+   background: red;
+   position: absolute;
+   bottom:-6px;
+   left:0px;
+  transition: 0.5s;
+}
+.navbar ul li a:hover::after{
+  width:100%;
+}
+.web{
+  color:blueviolet;
+}
+.spa{
+  color:blueviolet;
+}
+.me {
+  font-size:30px;
+  margin-top:10%;
+  position:relative;
+  left:140px;
+}
+#header{
+  background-image: url(folder_b/person-front-computer-working-html.jpg);
+  background-position: center;
+  background-size: cover;
+  position:relative;
+  right:150px;
+  top:150px;
+  height:400px;
+  width:400px;
+  float:right;
+  border-radius:10px;;  
+}
+
+#about{
+padding:80px 0 ;
+}
+.about{
+  color:blueviolet;
+}
+.row{
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about1{
+  flex-basis:35%;
+}
+.about1 img{
+  position:relative;
+  top:130px;
+  left:50px;
+  width:100%;
+  border-radius:10px;
+}
+.about2 {
+  position:relative;
+  top:130px;
+  font-size:25px;
+  flex-basis:60%;
+}
+.para{
+  font-size:19px;
+}
+.tab-titles {
+  display:flex;
+  justify-content: space-around;
+  font-size:25px;
+  color:blueviolet;
+  margin:15px 0px;
+}
+.tab-titles p {
+  position: relative;
+  margin:0px;
+  cursor:pointer;
+}
+
+
+.heading{
+  color:blueviolet;
+  font-size:22px;
+}
+.tab-contents ul ul{
+      font-size:18px;     
+}
+
+.row1{
+  display:block;
+}
+.row1{
+   display:block;
+}
+.sub-title{
+  margin:0px 40px;
+  font-size: 35px;
+  color:blueviolet;
+}
+.mail{
+  margin:0px 40px;
+  font-size:19px;
+}
+.num{
+  margin:0px 40px;
+  font-size:19px;    
+}
+.table{
+  position:relative;
+  width:100%;
+  
+}
+form input, form textarea{
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border:0;
+  background-color: #262626;
+  color:white;
+  margin:10px 0px;
+  padding:10px 8px;
+  width:500px;
+}
+.container-m{
+  display:flex;
+  justify-content: space-between;
+}
+.table{
+  flex-basis:60%; 
+  color: white;
+}
+.btn{
+ 
+  color:white;
+  background-color:blueviolet;
+  border-radius:8px;
+  
+}
+.btn:hover{
+  background-color:green;
+}
+
+.container-m{
+   margin:25px 20px;
+   padding:15px 10px;
+}
+.copyright{
+  color:blueviolet;
+}
+
+
+@media only screen and (max-width:600px){
+  .container-m{
+      display:block;
+  }
+  .btn2{
+      top:-9px;
+      right:34px;
+  }
+  .sub-title{
+      position:relative;
+       right:40px;
+  }
+  .num{
+      position:relative;
+      right:40px;
+  }
+  .mail{
+      position:relative;
+      right:40px;
+  }
+  .about2{
+      left:0px;
+  }
+  .about1 img{
+      left:0px;
+  }
+}
